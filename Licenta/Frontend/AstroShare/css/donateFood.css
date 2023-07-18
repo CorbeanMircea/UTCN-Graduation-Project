@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#048b9a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:1.5rem;
+    --p-font:0.9rem;
+}
+
+::selection{
+    background: var(--main-color);
+    color:#fff;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+/* Container */
+.container{
+    display: flex;
+    height: 600px;
+    width: 800px;
+    border: 1px solid var(--bg-color);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container2{
+    display: flex;
+    height: 700px;
+    width: 800px;
+    border: 1px solid var(--bg-color);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #feeee7;
+}
+.form h2{
+    font-size: 3rem;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    margin:40px;
+    color: var(--main-color);
+}
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid var(--bg-color);
+    outline: none;
+    border-radius: 20px;
+}
+.form select {
+    display: block;
+    width: 65%;
+    margin: 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid var(--bg-color);
+    font-family: inherit;
+    /** for the dropdown indicator */
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    font-family: "Palatino Linotype",serif;
+    color: black;
+}
+#submit{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+#submit:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+    cursor: pointer;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+    font-family: "Palatino Linotype",serif;
+    margin-top: 20px;
+}
+.form a:hover{
+    color:var(--main-color);
+}
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: var(--main-color);
+}
+.side img{
+    width:450px;
+    height:450px;
+}
+
+.sidebox{
+    height: 80%;
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}

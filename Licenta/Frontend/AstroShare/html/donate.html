@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate</title>
+    <link rel = "stylesheet" type="text/css" href="../css/donate.css">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form class = "form">
+        <h2>Donation</h2>
+        <input name="name" type="text" id="name" class="box" placeholder="name" required>
+        <input name="email" type="email" id="email" class="box" placeholder="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <input name="amount" type="text" class="box" placeholder="amount" pattern="(?!0+)\d+" required>
+        <div class="switch">
+        <input type="radio" class="switch-input" name="mode" value="One-Time" id="one-time" checked="">
+        <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+        <input type="radio" class="switch-input" name="mode" value="Monthly" id="monthly">
+        <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+        <span class="switch-selection"></span>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <div class="side">
+        <img src="../images/img.png" alt="">
+    </div>
+</div>
+
+</div>
+<script src="../js/donate.js"></script>
+</body>
+</html>
+

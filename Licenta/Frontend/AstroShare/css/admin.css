@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Palatino Linotype",serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #048b9a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:1.5rem;
+    --p-font:0.9rem;
+}
+
+::selection{
+    background: #036f7b;
+    color:#fff;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #feeee7;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container2 .btn:hover, .open-button2:hover {
+    opacity: 1;
+}
+.form-container2 {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #feeee7;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container3 .btn:hover, .open-button3:hover {
+    opacity: 1;
+}
+.form-container3 {
+    max-width: 300px;
+    padding: 10px 2px;
+    background-color: #feeee7;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container4 .btn:hover, .open-button4:hover {
+    opacity: 1;
+}
+.form-container4 {
+    max-width: 300px;
+    padding: 10px 2px;
+    background-color: #feeee7;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container5 .btn:hover, .open-button5:hover {
+    opacity: 1;
+}
+.form-container5 {
+    max-width: 300px;
+    padding: 10px 2px;
+    background-color: #feeee7;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    border: 1px solid var(--bg-color);
+    outline: none;
+    border-radius: 1px;
+}
+
+.form-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+.form-container .btn:hover{
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form-container2 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+.form-container2 .btn:hover{
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+    cursor: pointer;
+}
+.form-container3 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+.form-container3 .btn:hover{
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form-container3 label{
+    color: var(--bg-color);
+}
+.form-container3 .round{
+    color: gray;
+}
+
+.form-container4 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+.form-container4 .btn:hover{
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form-container4 label{
+    color: var(--bg-color);
+}
+
+.form-container5 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+.form-container5 .btn:hover{
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form-container5 label{
+    color: var(--bg-color);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 23px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form-popup2 {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 130px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-popup3 {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 240px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-popup4 {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 360px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-popup5 {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 470px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 100px;
+}
+
+.open-button2 {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 140px;
+    width: 100px;
+}
+
+.open-button3 {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 250px;
+    width: 100px;
+}
+
+.open-button4 {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 360px;
+    width: 100px;
+}
+
+.open-button5 {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 470px;
+    width: 100px;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 30px 170px;
+    background: var(--bg-color);
+}
+
+.logo{
+    height: 50px;
+    width: 250px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    transition:.4s;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.users{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.users h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+}
+
+.users .container{
+    width:100%;
+    margin:30px;
+    height: auto;
+}
+
+.users .container .table{
+    width:100%;
+}
+.users .container .table{
+    border:2px solid var(--main-color);
+}
+
+.users .table th{
+    background:var(--main-color);
+}
+
+.products{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.products h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+}
+
+.products .container{
+    width:100%;
+    margin:30px;
+    height: auto;
+}
+
+.products .container .table{
+    width:100%;
+}
+.products .container .table{
+    border:2px solid var(--main-color);
+}
+
+.products .table th{
+    background:var(--main-color);
+}
+
+.donations{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.donations h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+}
+
+.donations .container{
+    width:100%;
+    margin:30px;
+    height: auto;
+}
+
+.donations .container .table{
+    width:100%;
+}
+.donations .container .table{
+    border:2px solid var(--main-color);
+}
+
+.donations .table th{
+    background:var(--main-color);
+}
+
+.messages{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.messages h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+}
+
+.messages .container{
+    width:100%;
+    margin:30px;
+    height: auto;
+}
+
+.messages .container .table{
+    width:100%;
+}
+.messages .container .table{
+    border:2px solid var(--main-color);
+}
+
+.messages .table th{
+    background:var(--main-color);
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.events{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.events h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+}
+
+.events .container{
+    width:100%;
+    margin:30px;
+    height: auto;
+}
+
+.events .container .table{
+    width:100%;
+}
+.events .container .table{
+    border:2px solid var(--main-color);
+}
+
+.events .table th{
+    background:var(--main-color);
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,td{
+    max-width: 100px;
+    text-align:center;
+    padding:5px 0;
+}
+
+tbody tr{
+    background: white;
+    color: var(--main-color);
+}
+
+tbody tr:hover{
+    cursor: pointer;
+    background:var(--main-color);
+    color:white;
+}
+
+@media (max-width: 1560px) {
+    header{
+        padding: 15px 40px;
+    }
+    :root{
+        --big-font: 3.5rem;
+        --h2-font: 2rem;
+    }
+}
+
+@media (max-width: 1140px){
+    section{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #2b2640;
+        transition: .3s;
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .col{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 575px){
+    .col{
+        width: 100%;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin View</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<a><img class="logo" src = "../images/logoname.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+<ul class="navbar">
+    <li><a href="#users">Users</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#donations">Donations</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#messages">Messages</a></li>
+</ul>
+</header>
+<section class="users" id="users">
+    <div class="container">
+        <h1>Users Table</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">_id</th>
+                <th scope="col">Username</th>
+                <th scope="col">Password</th>
+                <th scope="col">Role Id</th>
+                <th scope="col">Product Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="pop-up">
+        <button class="open-button" onclick="openForm()">Delete User</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <input class="box" type="text" name="productId" id="productId" placeholder="id">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <div class="container">
+        <h1>Products Table</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">_id</th>
+                <th scope="col">Product Id</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Details</th>
+                <th scope="col">Category</th>
+                <th scope="col">Availability</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Pick-up point</th>
+
+            </tr>
+            </thead>
+            <tbody id="table-body-products">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="pop-up">
+        <button class="open-button2" onclick="openForm2()">Delete Product</button>
+
+        <div class="form-popup2" id="myForm2">
+            <form class="form-container2">
+                <input class="box" type="text" name="productId" id="productIds" placeholder="id">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn" onclick="closeForm2()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div class="pop-up">
+        <button class="open-button3" onclick="openForm3()">Modify Product</button>
+
+        <div class="form-popup3" id="myForm3">
+            <form class="form-container3">
+                <input class="box" type="text" name="id" id="id" placeholder="id">
+                <input name="productName" type="text" id="productName" class="box" placeholder="product name">
+                <select id="category" name="category" class="round">
+                    <option class="box" value="Fruit and vegetables">Fruit and vegetables</option>
+                    <option class="box" value="Dairy">Dairy</option>
+                    <option class="box" value="Meat">Meat</option>
+                    <option class="box" value="Grains, nuts, and seeds">Grains, nuts, and seeds</option>
+                </select>
+                <label for="availability">Expiration date:</label>
+                <input name="availability" type="date" id="availability" class="box">
+                <input name="quantity" type="text" id="quantity" class="box" placeholder="quantity" pattern="(?!0+)\d+">
+                <textarea class="productDetails" type="text" name="productDetails" id="productDetails" placeholder="description"></textarea>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn" onclick="closeForm3()">Close</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<section class="donations" id="donations">
+    <div class="container">
+        <h1>Donations Table</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mode</th>
+                <th scope="col">Amount</th>
+            </tr>
+            </thead>
+            <tbody id="table-body-donations">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="messages" id="messages">
+    <div class="container">
+        <h1>Messages Table</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Message</th>
+            </tr>
+            </thead>
+            <tbody id="table-body-message">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="events" id="events">
+    <div class="container">
+        <h1>Events Table</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Event Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Location</th>
+                <th scope="col">Address</th>
+                <th scope="col">Date</th>
+                <th scope="col">Program</th>
+                <th scope="col">Spots Available</th>
+            </tr>
+            </thead>
+            <tbody id="table-body-events">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pop-up">
+        <button class="open-button4" onclick="openForm4()">Add Event</button>
+
+        <div class="form-popup4" id="myForm4">
+            <form class="form-container4">
+                <input class="box" type="text" name="name" id="eventName" placeholder="event name">
+                <textarea class="eventDescription" type="text" name="description" id="description" placeholder="description"></textarea>
+                <label for="date">Event date:</label>
+                <input name="date" type="date" id="date" class="box">
+                <input class="box" type="text" name="location" id="location" placeholder="event location">
+                <input class="box" type="text" name="address" id="address" placeholder="event address">
+                <input class="box" type="text" name="program" id="program" placeholder="program">
+                <input class="box" type="text" name="spotsAvailable" id="spotsAvailable" placeholder="number of spots" pattern="(?!0+)\d+">
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn" onclick="closeForm4()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <button class="open-button5" onclick="openForm5()">Delete Event</button>
+
+        <div class="form-popup5" id="myForm5">
+            <form class="form-container5">
+                <input class="box" type="text" name="eventCode" id="eventCode" placeholder="event code">
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn" onclick="closeForm5()">Close</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

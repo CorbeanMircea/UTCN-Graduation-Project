@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate</title>
+    <link rel = "stylesheet" type="text/css" href="../css/donateFood.css">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form class = "form" id="form_id">
+        <h2>Food</h2>
+        <input name="productName" type="text" id="productName" class="box" placeholder="product name" required>
+        <select id="category" name="category" class="round">
+            <option class="box" value="Fruit and vegetables">Fruit and vegetables</option>
+            <option class="box" value="Dairy">Dairy</option>
+            <option class="box" value="Meat">Meat</option>
+            <option class="box" value="Grains, nuts, and seeds">Grains, nuts, and seeds</option>
+        </select>
+        <label for="availability">Expiration date:</label>
+        <input name="availability" type="date" id="availability" class="box" required>
+        <input name="quantity" type="text" id="quantity" class="box" placeholder="quantity" pattern="(?!0+)\d+" required>
+        <input name="location" type="text" id="location" class="box" placeholder="pick-up address" required>
+
+        <input type="hidden" name="latitude" id="latitude" value="">
+        <input type="hidden" name="longitude" id="longitude" value="">
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <div class="side">
+        <textarea name="productDetails" class="sidebox" id="productDetails" maxlength="300" form="form_id" placeholder="product details" required></textarea>
+    </div>
+</div>
+
+</div>
+<script src="../js/donateFood.js"></script>
+</body>
+</html>
+

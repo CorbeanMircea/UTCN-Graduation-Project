@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/sign.css" />
+    <title> SignUp Page </title>
+
+</head>
+<body>
+<div class="container2">
+<form class = "form">
+    <h2>SIGN IN</h2>
+    <input name="username" type="text" class="box" placeholder="username">
+    <input name="password" type="password" class="box" placeholder="password">
+    <input name="name" type="text" id="name" class="box" placeholder="name">
+    <input name="email" type="email" id="email" class="box" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    <input name="roleId" type="number" class="box" placeholder="roleId">
+    <input name="phoneNumber" type="tel" class="box" placeholder="phone" pattern="[0]{1}[7]{1}[0-9]{8}">
+    <button type="submit" id="submit">Submit</button>
+</form>
+    <div class="side">
+        <img src="../images/img.png" alt="">
+    </div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="../js/signup.js"></script>
+</body>
+</html>

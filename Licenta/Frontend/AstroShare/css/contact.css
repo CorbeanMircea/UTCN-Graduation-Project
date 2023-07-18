@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#048b9a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:1.5rem;
+    --p-font:0.9rem;
+}
+
+::selection{
+    background: var(--main-color);
+    color:#fff;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #feeee7;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    align-items: center;
+    max-width: 700px;
+}
+
+form h3{
+    font-family: "Palatino Linotype", sans-serif;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+form textarea {
+    height: 100%;
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: 16px;
+    resize: none;
+}
+
+.box {
+    padding: 12px;
+    width: 50%;
+    margin: 10px;
+    border: 1px solid var(--bg-color);
+    outline: none;
+    border-radius: 20px;
+}
+
+form button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Palatino Linotype",serif;
+    font-weight: bold;
+    border: 0.5rem;
+    border-radius: 20px;
+    margin: 0.8rem 0 0.5rem;
+}
+
+form button:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+    cursor: pointer;
+}

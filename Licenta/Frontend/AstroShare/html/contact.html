@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!--css-->
+    <link rel = "stylesheet" type="text/css" href="../css/contact.css">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <form class="contact-form">
+        <h3>GET IN TOUCH</h3>
+        <input name="name" type="text" id="name" class="box" placeholder="name" required>
+        <input name="email" type="email" id="email" class="box" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <textarea name="message" id="message" rows="4" maxlength="250" placeholder="How can we help you?" required></textarea>
+        <button type="submit" id="submit">Send</button>
+    </form>
+</div>
+
+
+<script src="../js/contact.js"></script>
+</body>
+</html>
